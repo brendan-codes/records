@@ -1,0 +1,9 @@
+<p>edit works!</p>
+<button [routerLink]="['/']">Cancel</button>
+<hr>
+
+subject: {{ record.subject }}<br>
+desc: {{ record.desc }}<br>
+location: {{ record.location }}<br>
+
+<input type="text" name="subject" [(ngModel)]="record.subject">

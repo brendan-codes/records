@@ -1,0 +1,10 @@
+<p>new works!</p>
+<button [routerLink]="['/']">Cancel</button>
+<hr>
+{{ errors | json }}
+<form (submit)="createRecord()">
+    subject: <input type="text" name="subject" [(ngModel)]="newRecord.subject"><br>
+    desc: <input type="text" name="desc" [(ngModel)]="newRecord.desc"><br>
+    location: <input type="text" name="location" [(ngModel)]="newRecord.location"><br>
+    <input type="submit" value="Create!">
+</form>

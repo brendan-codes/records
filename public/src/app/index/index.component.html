@@ -1,0 +1,11 @@
+<p>index works!</p>
+<button [routerLink]="['/new']">Create Record</button>
+<hr>
+<div *ngFor="let record of records">
+
+    <app-record [oneRecord]="record"></app-record>
+    <!-- <p>subject: {{ record.subject }}</p>
+    <p>desc: {{ record.desc }}</p>
+    <p>location: {{ record.location }}</p>
+    <button routerLink="/edit/{{record._id}}">{{ record._id }}</button> -->
+</div>
